@@ -14,13 +14,13 @@ function runGit(cmd) {
   }
 }
 
-console.log("Staging final files...");
+console.log("Staging files...");
 runGit('git add .');
 
-console.log("Committing final computer sync fix...");
-runGit('git commit -m "fix: resolve OY component source.data TypeError crash on mobile"');
+console.log("Committing computer hydration and 404 image fix...");
+runGit('git commit -m "fix: resolve computer.webp 404 and Mu responsive hydration crash on mobile"');
 
-console.log("Pushing final updates to GitHub...");
+console.log("Pushing final fix to GitHub...");
 runGit('git push origin main');
 
 console.log("Push complete!");
