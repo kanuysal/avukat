@@ -14,13 +14,13 @@ function runGit(cmd) {
   }
 }
 
-console.log("Staging final files...");
+console.log("Staging modified files...");
 runGit('git add .');
 
-console.log("Committing high-tech text and favicon changes...");
-runGit('git commit -m "update: replace high-tech text with Avukat Erkan Uysal, BURSA and copy logo1.svg to icon.svg"');
+console.log("Committing hydration fix...");
+runGit('git commit -m "fix: resolve responsive About section hydration mismatch crash on mobile"');
 
-console.log("Pushing updates to GitHub...");
+console.log("Pushing final hydration fix to GitHub...");
 runGit('git push origin main');
 
 console.log("Push complete!");
