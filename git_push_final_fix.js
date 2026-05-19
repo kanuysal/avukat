@@ -14,13 +14,13 @@ function runGit(cmd) {
   }
 }
 
-console.log("Staging modified files...");
+console.log("Staging final modified files...");
 runGit('git add .');
 
-console.log("Committing mobile video fix...");
-runGit('git commit -m "fix: resolve mobile video texture TypeError on load"');
+console.log("Committing final mobile video fix...");
+runGit('git commit -m "fix: resolve first useEffect video source TypeError on mobile"');
 
-console.log("Pushing to GitHub...");
+console.log("Pushing final fix to GitHub...");
 runGit('git push origin main');
 
-console.log("Push complete!");
+console.log("Final Push complete!");
